@@ -1,0 +1,12 @@
+---
+- hosts: windows
+  gather_facts: false
+  tasks:
+  - name: Install langpack
+    script: ps-files/install-langpack.ps1
+  - name: Restart computer
+    win_reboot:
+  - name: Setup language
+    script: ps-files/setup-language.ps1
+  - name: Restart computer
+    win_reboot:

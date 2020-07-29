@@ -1,0 +1,6 @@
+---
+- hosts: windows
+  gather_facts: false
+  tasks:
+  - name: Install dotnet framework sdk.
+    script: ps-files/install-netframework-sdk.ps1
