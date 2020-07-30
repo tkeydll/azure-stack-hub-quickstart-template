@@ -1,5 +1,5 @@
 [windows]
-10.232.0.57
+xxx.xxx.xxx.xxx
 
 [windows:vars]
 ansible_ssh_user=azureuser
