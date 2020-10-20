@@ -1,7 +1,3 @@
 #!/bin/sh
-echo "Updating packages ..."
-apt update
-#apt upgrade -y
-
-echo "Install docker ..."
-apt install docker.io -y
+apt-get update
+apt-get install docker.io -y
