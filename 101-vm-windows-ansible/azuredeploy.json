@@ -28,8 +28,7 @@
             "type": "securestring",
             "metadata": {
                 "description": "The password for the Administrator account of the new VMs. Default value is subscription id"
-            },
-            "defaultValue": "AzureUser2020"
+            }
         },
         "windowsOSVersion": {
             "type": "string",

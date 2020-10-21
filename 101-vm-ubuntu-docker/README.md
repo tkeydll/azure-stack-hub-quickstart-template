@@ -1,8 +1,8 @@
-## Ubuntu with Docker
+# Ubuntu with Docker
 
 Create ubuntu server with docker.
 
-### Usage
+## Usage
 
 ```bash
 az group create --name demo --location [your_location]
