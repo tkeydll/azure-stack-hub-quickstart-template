@@ -220,11 +220,9 @@
         "autoUpgradeMinorVersion": "true",
         "settings": {
           "fileUris": [
-            "https://raw.githubusercontent.com/tkeydll/azure-stack-hub-quickstart-template/master/template/101-vm-ubuntu-gitlab-runner/install-gitlab-runner.sh"
+            "https://raw.githubusercontent.com/tkeydll/azure-stack-hub-quickstart-template/master/101-vm-ubuntu-gitlab-runner/install-gitlab-runner.sh"
           ],
-          "protectedSettings": {
-            "commandToExecute": "[concat('sudo sh install-gitlab-runner.sh ', parameters('gitlabToken'))]"
-          }
+          "commandToExecute": "[concat('sudo sh install-gitlab-runner.sh ', parameters('gitlabToken'))]"
         }
       }
     }

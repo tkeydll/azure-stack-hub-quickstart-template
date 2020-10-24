@@ -214,7 +214,7 @@
         "autoUpgradeMinorVersion": "true",
         "settings": {
           "fileUris": [
-            "https://raw.githubusercontent.com/tkeydll/azure-stack-hub-quickstart-template/master/template/101-vm-ubuntu-docker/setup-docker.sh"
+            "https://raw.githubusercontent.com/tkeydll/azure-stack-hub-quickstart-template/master/101-vm-ubuntu-docker/setup-docker.sh"
           ],
           "commandToExecute": "sudo sh setup-docker.sh"
         }

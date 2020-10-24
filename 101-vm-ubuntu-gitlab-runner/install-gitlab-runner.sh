@@ -1,6 +1,6 @@
 #!/bin/sh
-echo "TOKEN = " $0
-TOKEN = $0
+TOKEN=$1
+echo "TOKEN = " $TOKEN
 
 # Download and install gitlab-runner.
 curl -LJO https://gitlab-runner-downloads.s3.amazonaws.com/latest/deb/gitlab-runner_amd64.deb
@@ -12,7 +12,7 @@ sudo gitlab-runner register \
   --url "https://gitlab.com/" \
   --registration-token "$TOKEN" \
   --executor "shell" \
-  --description "docker-runner" \
+  --description "ubuntu shell runner" \
   --tag-list "ubuntu, shell" \
   --run-untagged="true" \
   --locked="false" \

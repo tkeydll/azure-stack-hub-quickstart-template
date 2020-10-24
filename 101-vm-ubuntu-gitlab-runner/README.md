@@ -1,6 +1,9 @@
-# Ubuntu with Docker
+# Ubuntu for GitLab Runner
 
-Create ubuntu server with docker.
+Create ubuntu server for gitlab runner.
+
+https://docs.gitlab.com/runner/
+
 
 ## Usage
 
