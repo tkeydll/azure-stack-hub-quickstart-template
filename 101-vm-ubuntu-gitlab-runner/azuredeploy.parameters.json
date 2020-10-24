@@ -1,0 +1,21 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "vmName": {
+        "value": "ubuntu18-demo-1"
+    },
+    "adminUsername": {
+        "value": "azureuser"
+    },
+    "adminPassword":{
+      "value": ""
+    },
+    "ubuntuServerSku": {
+        "value": "18.04-LTS"
+    },
+    "gitlabToken": {
+        "value": ""
+    }
+  }
+}
