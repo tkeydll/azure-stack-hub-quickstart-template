@@ -39,6 +39,13 @@
                 "20.04-LTS"
             ]
         },
+        "gitlabServer": {
+          "type": "string",
+          "metadata": {
+            "description": "gitlab-runner register server. ex) https://example.com/"
+          },
+          "defaultValue": "https://gitlab.com/"
+        },
         "gitlabToken": {
           "type": "string",
           "metadata": {
@@ -222,7 +229,7 @@
           "fileUris": [
             "https://raw.githubusercontent.com/tkeydll/azure-stack-hub-quickstart-template/master/101-vm-ubuntu-gitlab-runner/install-gitlab-runner.sh"
           ],
-          "commandToExecute": "[concat('sudo sh install-gitlab-runner.sh ', parameters('gitlabToken'))]"
+          "commandToExecute": "[concat('sudo sh install-gitlab-runner.sh ', parameters('gitlabServer'), ' ', parameters('gitlabToken'))]"
         }
       }
     }
