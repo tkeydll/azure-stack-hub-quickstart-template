@@ -44,13 +44,23 @@
           "metadata": {
             "description": "gitlab-runner register server. ex) https://example.com/"
           },
-          "defaultValue": "https://gitlab.com/"
+          "defaultValue": "https://dis-filesv007.is.dnp.co.jp:10443/gitlab/"
         },
         "gitlabToken": {
           "type": "string",
           "metadata": {
             "description": "gitlab-runner register token."
           }
+        },
+        "scriptName": {
+          "type": "string",
+          "metadata": {
+            "description": "script name to setup build server."
+          },
+          "allowedValues": [
+            "install-gitlab-runner.sh",
+            "install-gitlab-runner-dotnet31.sh"
+          ]
         }
     },
     "variables": {
@@ -227,9 +237,9 @@
         "autoUpgradeMinorVersion": "true",
         "settings": {
           "fileUris": [
-            "https://raw.githubusercontent.com/tkeydll/azure-stack-hub-quickstart-template/master/101-vm-ubuntu-gitlab-runner/install-gitlab-runner.sh"
+            "[concat('http://commonstorage.blob.tokyo.azs.is.dnp.co.jp/scripts/', parameters('scriptName'))]"
           ],
-          "commandToExecute": "[concat('sudo sh install-gitlab-runner.sh ', parameters('gitlabServer'), ' ', parameters('gitlabToken'))]"
+          "commandToExecute": "[concat('sh ',  parameters('scriptName'), ' ', parameters('gitlabServer'), ' ', parameters('gitlabToken'))]"
         }
       }
     }
