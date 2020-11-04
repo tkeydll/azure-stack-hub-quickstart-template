@@ -3,19 +3,25 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "vmName": {
-        "value": "ubuntu18-demo-1"
+        "value": "ubuntu18-dotnet-build-1"
     },
     "adminUsername": {
         "value": "azureuser"
     },
     "adminPassword":{
-      "value": ""
+        "value": ""
     },
     "ubuntuServerSku": {
         "value": "18.04-LTS"
     },
+    "gitlabServer": {
+        "value": "https://gitlab.com/"
+    },
     "gitlabToken": {
         "value": ""
+    },
+    "scriptName": {
+        "value": "install-gitlab-runner-dotnet31.sh"
     }
   }
 }
