@@ -15,12 +15,12 @@ az deployment group create --resource-group demo --template-file azuredeploy.jso
 
 ```bash
 cd ansible
-ansible-playbool language.yml -l hosts
+ansible-playbool language.yml -i hosts
 ```
 
 ### Setup .NET Framework SDK
 
 ```bash
 cd ansible
-ansible-playbool netsdk.yml -l hosts
+ansible-playbool netsdk.yml -i hosts
 ```
