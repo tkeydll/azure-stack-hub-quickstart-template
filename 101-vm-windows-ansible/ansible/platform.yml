@@ -1,0 +1,11 @@
+---
+- hosts: windows
+  gather_facts: false
+  vars_prompt:
+    - name: ansible_ssh_pass
+      prompt: Windows password
+      private: yes
+      confirm: no
+  tasks:
+  - name: Install .NET 5 Runtime
+    script: ps-files/install-dotnet5-runtime.ps1

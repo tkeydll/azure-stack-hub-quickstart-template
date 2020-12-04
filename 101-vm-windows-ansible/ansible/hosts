@@ -1,9 +1,8 @@
 [windows]
 xxx.xxx.xxx.xxx
-
 [windows:vars]
+
 ansible_ssh_user=azureuser
-ansible_ssh_pass=XXXXXXXX
 ansible_ssh_port=5986
 ansible_connection=winrm
 ansible_winrm_server_cert_validation=ignore
