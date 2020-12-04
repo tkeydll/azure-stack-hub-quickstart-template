@@ -3,7 +3,7 @@
   gather_facts: false
   vars_prompt:
     - name: ansible_ssh_pass
-      prompt: Windows password
+      prompt: Enter password for windows server.
       private: yes
       confirm: no
   tasks:
