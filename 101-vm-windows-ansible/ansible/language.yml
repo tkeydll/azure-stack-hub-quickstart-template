@@ -1,6 +1,11 @@
 ---
 - hosts: windows
   gather_facts: false
+  vars_prompt:
+    - name: ansible_ssh_pass
+      prompt: Windows password
+      private: yes
+      confirm: no
   tasks:
   - name: Install langpack
     script: ps-files/install-langpack.ps1
