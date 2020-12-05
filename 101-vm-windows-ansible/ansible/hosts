@@ -1,8 +1,8 @@
 [windows]
-xxx.xxx.xxx.xxx
+52.231.193.187
 
 [windows:vars]
-ansible_ssh_user=azureuser
+ansible_ssh_user=tkey_dll
 ansible_ssh_port=5986
 ansible_connection=winrm
 ansible_winrm_server_cert_validation=ignore
