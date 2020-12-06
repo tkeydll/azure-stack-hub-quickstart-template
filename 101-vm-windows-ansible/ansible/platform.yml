@@ -9,3 +9,12 @@
   tasks:
   - name: Install .NET 5 Runtime
     script: ps-files/install-dotnet5-runtime.ps1
+  tasks:
+  - name: Install node.js
+    script: ps-files/install-nodejs.ps1
+  tasks:
+  - name: Install yarn
+    script: ps-files/install-yarn.ps1
+  tasks:
+  - name: Install ruby
+    script: ps-files/install-ruby.ps1
