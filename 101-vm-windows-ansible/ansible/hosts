@@ -1,5 +1,6 @@
 [windows]
 xxx.xxx.xxx.xxx
+
 [windows:vars]
 ansible_ssh_user=azureuser
 ansible_ssh_port=5986
