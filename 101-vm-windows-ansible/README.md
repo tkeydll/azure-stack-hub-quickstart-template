@@ -24,3 +24,12 @@ ansible-playbool language.yml -i hosts
 cd ansible
 ansible-playbool netsdk.yml -i hosts
 ```
+
+### Setup Multi Platform Server
+
+Install ASP.NET 5, node.js v14.15, Ruby 2.7.2 and Ruby on Rails.
+
+```bash
+cd ansible
+ansible-playbool platform.yml -i hosts
+```
