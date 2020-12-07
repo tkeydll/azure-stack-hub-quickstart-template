@@ -1,7 +1,7 @@
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 
-$url = "https://nodejs.org/dist/v14.15.1/node-v14.15.1-x64.msi"
-$msi = "node-x64.msi"
+$url = "https://golang.org/dl/go1.15.6.windows-amd64.msi"
+$msi = "go-amd64.msi"
 Invoke-WebRequest -Uri $url -OutFile $msi
 
 msiexec /i $msi /qn

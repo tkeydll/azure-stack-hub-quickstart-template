@@ -15,3 +15,7 @@
     script: ps-files/install-yarn.ps1
   - name: Install ruby
     script: ps-files/install-ruby.ps1
+  - name: Install go
+    script: ps-files/install-go.ps1
+  - name: Install python
+    script: ps-files/install-python.ps1
