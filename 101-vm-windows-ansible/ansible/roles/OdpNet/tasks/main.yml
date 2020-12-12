@@ -1,0 +1,13 @@
+---
+- name: Download ODP.NET
+  win_get_url:
+    url: https://<your_url>/installer/ODTwithODAC1120320_32bit.zip
+    dest: C:\Users\azureuser\ODTwithODAC112030.zip
+- name: Expand archive
+  win_shell: Expand-Archive -Path C:\Users\azureuser\ODTwithODAC112030.zip -Force
+- name: Put response file
+  win_copy:
+    src: response.rsp
+    dest: C:\Users\azureuser\ODTwithODAC112030\response.rsp
+- name: Install ODP.NET
+  win_command: C:\Users\azureuser\ODTwithODAC112030\setup.exe -silent -responseFile C:\Users\azureuser\ODTwithODAC112030\response.rsp -nowelcome

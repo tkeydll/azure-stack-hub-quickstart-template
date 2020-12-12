@@ -3,9 +3,11 @@
   gather_facts: false
   vars_prompt:
     - name: ansible_ssh_pass
-      prompt: Enter password for windows server.
+      prompt: Enter password
       private: yes
       confirm: no
+  roles:
+    - OdpNet
   tasks:
     - name: Install .NET 5 Runtime via chololatey
       win_chocolatey:
