@@ -8,11 +8,13 @@
       confirm: no
   roles:
     - OdpNet
+    - aspnet5
   tasks:
-    - name: Install .NET 5 Runtime via chololatey
-      win_chocolatey:
-        name: dotnet-aspnetruntime
-        state: present
+    # Need iis setup
+    # - name: Install .NET 5 Runtime via chololatey
+    #   win_chocolatey:
+    #     name: dotnet-5.0-windowshosting
+    #     state: present
     - name: Install node.js via chololatey
       win_chocolatey:
         name: nodejs
