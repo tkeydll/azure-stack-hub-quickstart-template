@@ -15,14 +15,14 @@ az deployment group create --resource-group demo --template-file azuredeploy.jso
 
 ```bash
 cd ansible
-ansible-playbool language.yml -i hosts
+ansible-playbook language.yml -i hosts
 ```
 
 ### Setup .NET Framework SDK
 
 ```bash
 cd ansible
-ansible-playbool netsdk.yml -i hosts
+ansible-playbook netsdk.yml -i hosts
 ```
 
 ### Setup Multi Platform Server
@@ -31,5 +31,5 @@ Install ASP.NET 5, node.js, Ruby on Rails, Go, Python.
 
 ```bash
 cd ansible
-ansible-playbool platform.yml -i hosts
+ansible-playbook platform.yml -i hosts
 ```
